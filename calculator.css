@@ -1,0 +1,95 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3em;
+  box-sizing: border-box;
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0px 0px;
+}
+
+button.symbol:not(#equal):focus {
+  transform: translateY(4px);
+  box-shadow: 0px 0px;
+}
+
+#wrapper {
+  width: 500px;
+  height: 600px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(28, 48, 88);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(90, 79, 28);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+#answer {
+  background-color: rgb(228, 228, 228);
+  font-size: 1.8em;
+  grid-column: 1 / span 4;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: auto;
+}
+
+.symbol {
+  background-color: rgb(138, 138, 138);
+  border: 1px solid rgb(138, 138, 138);
+  box-shadow: 0px 5px 2px rgb(73, 73, 73);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.symbol:hover {
+  background-color: rgb(121, 121, 121);
+  border: 1px solid rgb(121, 121, 121);
+}
+
+.number {
+  background-color: rgb(255, 196, 0);
+  box-shadow: 0px 5px 2px rgb(136, 105, 2);
+  border: 1px solid rgb(255, 196, 0);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.number:hover {
+  background-color: rgb(223, 171, 0);
+  border: 1px solid rgb(223, 171, 0);
+}
+
+#clear {
+  background-color: rgb(203, 54, 54);
+  box-shadow: 0px 5px 2px rgb(93, 24, 24);
+  border: 1px solid rgb(142, 37, 37);
+}
+
+#clear:hover {
+  background-color: rgb(165, 42, 42);
+}
+
+#clear:active {
+  box-shadow: 0px 0px;
+}
+
+#equal {
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 4;
+}
