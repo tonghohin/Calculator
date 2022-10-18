@@ -34,9 +34,8 @@ button.symbol:not(#equal):focus {
   grid-column: 1 / span 4;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 5px;
-  display: flex;
-  justify-content: flex-end;
   overflow: auto;
+  text-align:right;
 }
 
 .symbol {
@@ -45,9 +44,6 @@ button.symbol:not(#equal):focus {
   box-shadow: 0px 5px 2px rgb(73, 73, 73);
   border-radius: 5px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -63,9 +59,6 @@ button.symbol:not(#equal):focus {
   border: 1px solid rgb(255, 196, 0);
   border-radius: 5px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
   transition: background-color 0.3s;
 }
